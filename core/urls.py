@@ -10,6 +10,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
 
+    path('api-auth/', include('rest_framework.urls')),
     path('api/users/', include('users.urls')),
     path('api/workouts/', include('workouts.urls')),
     path('api/nutrition/', include('nutrition.urls')),
